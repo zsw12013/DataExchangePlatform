@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zhousw-sys:war">
+    <output-path>$PROJECT_DIR$/zhousw-sys/target</output-path>
+    <root id="archive" name="zhousw-sys.war">
+      <element id="artifact" artifact-name="zhousw-sys:war exploded" />
+    </root>
+  </artifact>
+</component>
