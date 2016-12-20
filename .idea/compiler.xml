@@ -24,12 +24,36 @@
         <processorPath useClasspath="true" />
         <module name="zhousw-sys" />
       </profile>
+      <profile default="false" name="Annotation profile for zhousw-com" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="zhousw-com" />
+      </profile>
+      <profile default="false" name="Annotation profile for zhousw-sys-facade" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="zhousw-sys-facade" />
+      </profile>
+      <profile default="false" name="Annotation profile for zhousw-sys-service" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="zhousw-sys-service" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java" target="1.5" />
+      <module name="zhousw-com" target="1.7" />
       <module name="zhousw-parent" target="1.7" />
       <module name="zhousw-sys" target="1.7" />
       <module name="zhousw-sys (1)" target="1.5" />
+      <module name="zhousw-sys-facade" target="1.7" />
+      <module name="zhousw-sys-service" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

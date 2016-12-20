@@ -6,12 +6,16 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/zhousw-parent/src/test/java" />
     <file type="web" url="file://$PROJECT_DIR$/zhousw-sys" />
+    <file type="web" url="file://$PROJECT_DIR$/zhousw-sys-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/zhousw-parent/pom.xml" />
         <option value="$PROJECT_DIR$/zhousw-parent/src/test/java/pom.xml" />
+        <option value="$PROJECT_DIR$/zhousw-com/pom.xml" />
+        <option value="$PROJECT_DIR$/zhousw-sys-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/zhousw-sys-service/pom.xml" />
       </list>
     </option>
   </component>
@@ -25,7 +29,15 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ZooKeeperConfig">
+    <option name="host" value="192.168.99.105" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="" />
+    <option name="enabled" value="true" />
+    <option name="tooltip" value="true" />
   </component>
 </project>

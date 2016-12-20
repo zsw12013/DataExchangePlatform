@@ -29,7 +29,7 @@
         <property name="order" value="1" />
     </bean>
 
-    <!-- spring 扫描所有bhz.sys.web下文件 -->
+    <!-- spring 扫描所有zhousw.sys.web下文件 -->
     <context:component-scan base-package="zhousw" />
 
 </beans>

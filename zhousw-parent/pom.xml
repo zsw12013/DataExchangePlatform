@@ -13,14 +13,13 @@
     <url>http://maven.apache.org</url>
 
     <!-- 进行聚合的子项目 -->
-    <!--
-    <modules>
-        <module>../zhousw-com</module>
-        <module>../zhousw-sys</module>
-         <module>../zhousw-sys-facade</module>
-         <module>../zhousw-sys-service</module>
-    </modules>
-    -->
+   <!-- <modules>
+         <module>../zhousw-com</module>
+         <module>../zhousw-sys</module>
+          <module>../zhousw-sys-facade</module>
+          <module>../zhousw-sys-service</module>
+    </modules>-->
+
 
 
     <!-- 配置私服工厂 -->
@@ -79,7 +78,7 @@
         <fastjson.version>1.1.26</fastjson.version>
         <slf4j.version>1.7.6</slf4j.version>
         <log4j.version>1.2.15</log4j.version>
-        <ojdbc7.version>1.0</ojdbc7.version>
+        <ojdbc7.version>10.2.0.4.0</ojdbc7.version>
         <jstl.version>1.2</jstl.version>
         <servlet-api.version>3.0-alpha-1</servlet-api.version>
 
@@ -238,8 +237,8 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.ojdbc7</groupId>
-            <artifactId>ojdbc7</artifactId>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
             <version>${ojdbc7.version}</version>
         </dependency>
         <dependency>
