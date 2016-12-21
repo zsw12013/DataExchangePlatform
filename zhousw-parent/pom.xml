@@ -5,20 +5,18 @@
     <groupId>zhousw</groupId>
     <artifactId>zhousw-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>../zhousw-sys</module>
-    </modules>
+
     <packaging>pom</packaging>
     <name>zhousw-parent</name>
     <url>http://maven.apache.org</url>
 
     <!-- 进行聚合的子项目 -->
-   <!-- <modules>
+    <modules>
          <module>../zhousw-com</module>
          <module>../zhousw-sys</module>
           <module>../zhousw-sys-facade</module>
           <module>../zhousw-sys-service</module>
-    </modules>-->
+    </modules>
 
 
 

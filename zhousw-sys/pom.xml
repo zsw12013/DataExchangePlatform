@@ -11,15 +11,18 @@
     </parent>
     <artifactId>zhousw-sys</artifactId>
     <packaging>war</packaging>
-
     <dependencies>
         <dependency>
             <groupId>zhousw</groupId>
             <artifactId>zhousw-com</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>zhousw</groupId>
+            <artifactId>zhousw-sys-facade</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
-
     <build>
         <finalName>zhousw-sys</finalName>
     </build>

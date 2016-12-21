@@ -15,7 +15,11 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring-context.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
@@ -29,6 +33,7 @@
     </content>
     <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.69" level="application_server_libraries" />
     <orderEntry type="module" module-name="zhousw-com" />
     <orderEntry type="module" module-name="zhousw-sys-facade" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
@@ -151,6 +156,5 @@
     <orderEntry type="library" name="Maven: de.javakaffee:kryo-serializers:0.26" level="project" />
     <orderEntry type="library" name="Maven: de.ruedigermoeller:fst:1.55" level="project" />
     <orderEntry type="library" name="Maven: org.jasig.cas.client:cas-client-core:3.1.12" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.69" level="application_server_libraries" />
   </component>
 </module>

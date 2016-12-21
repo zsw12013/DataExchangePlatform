@@ -43,4 +43,7 @@
     <!-- 动态代理 -->
     <aop:aspectj-autoproxy/>
 
+    <!-- 配置dubbo服务 -->
+    <import resource="classpath:dubbo-consumer.xml" />
+
 </beans>
