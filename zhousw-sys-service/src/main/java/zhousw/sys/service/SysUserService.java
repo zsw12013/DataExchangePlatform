@@ -1,68 +1,51 @@
 package zhousw.sys.service;
 
+import java.util.Collections;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import zhousw.sys.entity.SysUser;
+
+import zhousw.sys.dao.SysUserDao;
 import zhousw.sys.facade.SysUserFacade;
+
+import com.alibaba.fastjson.JSONObject;
 
 
 @Service("sysUserService")
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass=zhousw.sys.facade.SysUserFacade.class, protocol = {"rest", "dubbo"},timeout = 60000)
+@com.alibaba.dubbo.config.annotation.Service(interfaceClass=zhousw.sys.facade.SysUserFacade.class, protocol = {"rest", "dubbo"})
 public class SysUserService implements SysUserFacade {
 
+	@Autowired
+	private SysUserDao sysUserDao;
 
-	public void testget() {
-		//http://localhost:8888/zhousw-sys-service/sysUserService/testget
-		System.out.println("测试...get");
-	}
-		public SysUser getUser() {
-		//http://localhost:8888/zhousw-sys-service/sysUserService/getUser
-    	SysUser user = new SysUser();
-    	user.setId("1001");
-    	user.setName("张三");
-    	return user;
+	@Override
+	public String generateKey() throws Exception {
+		return this.sysUserDao.generateKey();
 	}
 
-	public SysUser getUser(Integer id) {
-		//http://localhost:8888/zhousw-sys-service/sysUserService/get/1001
-		System.out.println(id);
-		System.out.println("测试...get");
-		SysUser user = new SysUser();
-    	user.setId("1001");
-    	user.setName("张三");
-    	return user;
+	@Override
+	public JSONObject getById(String id) {
+		//get
+		//http://localhost:8888/zhousw-sys-service/sysUserService/getById/{id}
+		return this.sysUserDao.getById(id);
 	}
 
-	public SysUser getUser(Integer id, String name) {
-		//http://localhost:8888/zhousw-sys-service/sysUserService/get/1001/z3
-		System.out.println(id);
-		System.out.println(name);
-		System.out.println("测试...get");
-		SysUser user = new SysUser();
-    	user.setId("1001");
-    	user.setName("张三");
-    	return user;
-	}
-	
-	public void testpost() {
-    	System.out.println("测试...post");
-	}
-    
-	public SysUser postUser(SysUser user) {
-    	System.out.println(user.getName());
-    	System.out.println("测试...postUser");
-    	SysUser user1 = new SysUser();
-    	user.setId("1001");
-    	user1.setName("张三");
-    	return user1;
+	@Override
+	public List<JSONObject> getList() throws Exception {
+		//post
+		//http://localhost:8888/bhz-sys-service/sysUserService/getById/getList
+		List<JSONObject> list = this.sysUserDao.getList();
+		if(!list.isEmpty()){
+			return list;
+		} else {
+			return Collections.emptyList();
+		}
 	}
 
-	public SysUser postUser(String id) {
-		System.out.println(id);
-		System.out.println("测试...get");
-		SysUser user = new SysUser();
-    	user.setId("1001");
-    	user.setName("张三");
-    	return user;
+	@Override
+	public int insert(JSONObject jsonObject) throws Exception {
+		return this.sysUserDao.insert(jsonObject);
 	}
 
 
